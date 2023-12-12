@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Define character encoding for the document -->
+    <meta charset="UTF-8"> 
+    <!-- Configure viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- External stylesheet for styling -->
+    <link rel="stylesheet" href="websiteStyles.css"> 
+    <!-- Title of the query form -->
+    <title>Troubleshooting Form</title> 
+</head>
+<body>
+    <div class="container">
+		<!-- Heading -->
+        <h1>Describe the issue: </h1> 
+        <!-- Form element with a POST method and action to "process.php" when submitting -->
+        <form action="secondPage.php" method="post"> 
+			<!-- Label for "Name" input field -->
+            <label for="name">Name:</label> 
+            <!-- Text input for the user's name, with id and name attributes -->
+            <input type="text" id="name" name="name" required> 
+			
+			<!-- Label for "Address" input field -->
+            <label for="address">Address:</label> 
+            <!-- Text input for the user's address, with id and name attributes -->
+            <input type="text" id="address" name="address" required> 
+            
+			<!-- Label for "Contact Number" input field -->
+            <label for="contact">Contact Number:</label> 
+            <!-- Telephone input for the user's contact number, with id and name attributes -->
+            <input type="tel" id="contact" name="contact" required> 
+            
+			<!-- Label for "Problem" textarea -->
+            <label for="problem">Problem:</label> 
+            <!-- Textarea input for describing the problem, with id and name attributes -->
+            <textarea id="problem" name="problem" required></textarea>
+            
+			<!-- Submit button to send the form data to process.php using Apache Server -->
+            <button type="submit">Submit</button> 
+        </form>
+    </div>
+</body>
+</html>
